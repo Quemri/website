@@ -1,0 +1,152 @@
+body{
+    background-color: rgb(245, 227, 206);
+}
+
+.frame{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li{
+    display: inline;
+    align-self: center;
+    margin: 0;
+    margin-left: 15px;
+}
+
+ul{
+    margin: 0;
+    align-self: center;
+}
+
+.site-name{
+    margin: 0;
+    font-family: "Doto", serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #5e5444;
+}
+
+.nav-menu{
+    font-family: "Doto", serif;
+    font-weight: 800;
+    font-size: 16px;
+}
+a{
+    color: #342b1d;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ffc2b0;
+    transition: 0.3s;
+}
+
+/*dashboard*/
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.introduction{
+    font-family:"Sour Gummy", serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #5e5444;
+}
+
+.sample{
+    transition: none;
+    color: #bdaf99;
+}
+
+.highlight-1{
+    transition: none;
+    color: #bdaf99;
+}
+
+.highlight-2{
+    transition: none;
+    color: #bdaf99;
+
+}
+
+.recent-menu{
+    font-family: "Doto", serif;
+    font-weight: 800;
+    font-size: large;
+}
+.content{
+    display: flex;
+    align-items: center; /* Zentriert Bild und Text vertikal */
+    justify-content: flex-start; /* Bild und Text linksbündig */
+    width: 100%;
+}
+
+.rectangle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: transparent;
+    border: 2px solid #5e5444;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.duck-image{
+    width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.text{
+    flex: 1;
+    font-family:"Sour Gummy", serif;
+}
+.text h4{
+    margin: 0;
+    font-weight: 600;
+    font-size: larger;
+    color: #5e5444;
+}
+.text p{
+    font-weight: 500;
+    font-size: medium;
+    color: #7b7264;
+    text-align: left;
+    margin-left: 20px;
+    align-self: flex-start;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff00;
+    color: black;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: transparent;
+    color:black;
+  }
+

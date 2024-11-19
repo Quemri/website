@@ -1,6 +1,3 @@
-This is a demo of my website, I'm gonna do stuff and will keep it private I guess
+Hi, you reached my repo to my personal website. 
 
-
-Nvm, everyone has to see what kind of things I do with my website because it has to be public 💀
-
-Hello world
+Click [here](leegyuri.com) to visit it :)

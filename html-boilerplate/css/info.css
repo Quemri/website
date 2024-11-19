@@ -47,6 +47,12 @@ a{
     color: #342b1d;
     text-decoration: none;
 }
+a.site-name:hover{
+    color: #5e5444;
+    text-decoration: none; 
+    transition: none; 
+    pointer-events: auto;
+}
 .diego{
     display: flex;
 }

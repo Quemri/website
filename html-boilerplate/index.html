@@ -18,7 +18,7 @@
     <div class="frame">
 
         <nav class="navigator">
-            <h3 class="site-name">leegyuri.com</h3>
+            <h3 class="site-name"><a href="index.html" class="site-name">leegyuri.com</a></h3>
             <ul>
                 <li><a href="index.html" class="nav-menu">WORK</a></li>
                 <li><a href="info.html" class="nav-menu">INFO</a></li>
@@ -28,35 +28,42 @@
         <div class="dashboard">
             <h1 class="introduction">
                 Hello, I'm <a class="sample">Gyuri Lee</a>,<br> 
-                a <a class="highlight-1">Computer Science</a> student at TUM <br>
-                and <a class="highlight-2">crocheter</a>
+                a <a href="#section-cs" class="highlight-1">Computer Science</a> student at TUM <br>
+                and <a href="#section-crochet" class="highlight-2">crocheter</a>
             </h1>
         </div>
 
         <h5 class="recent-menu">RECENT WORKS</h5>
 
         <div class="recent-works">
-            <div class="rectangle crochet">
-                <div class="content crochet">
-                    <img src="images/duck.jpg" alt="Duck crochet" class="duck-image">
-                    <div class="text crochet">
-                        <h4>As Crocheter</h4>
-                        <p>When I have a crisis because of debugging, I create these cute things.</p>
-                    </div>
-                </div>
-                <button class="button crochet">View more</button>
-            </div>
-
-            <div class="rectangle cs">
+            <div class="rectangle cs" id="section-cs">
                 <div class="content cs">
-                    <img src="images/image.png" alt="GitHub Icon" class="duck-image">
+                    <img src="images/image.png" alt="GitHub Icon" class="git-image">
                     <div class="text cs">
                         <h4>As CS Student</h4>
                         <p>This website is my first off school project, I will work on other projects too. Maybe you can see them on my GitHub?</p>
                     </div>
                 </div>
-                <button class="button cs"><a href="https://github.com/Quemri" >View more</a></button>
+                <a href="https://github.com/Quemri" target="_blank"><button class="button cs">View more</button></a>
             </div>
+
+            <div class="rectangle crochet" id="section-crochet">
+                <div class="content crochet">
+                    <img src="images/duck.jpg" alt="Duck crochet" class="duck-image">
+                    <div class="text crochet">
+                        <h4>As Crocheter</h4>
+                        <p>When I have a crisis because of debugging, I create cute things to relief stress. Check out the other results of my pain :)</p>
+                </div>
+                <button class="button crochet">View more</button>
+            </div>
+        </div>
+
+        <h5 class="arisu">CAREER</h5>
+        <div class="arisu-frame">
+            <ul class="work">
+                <li><span class="time">2023-now:</span> 
+                    <span class="details"> Manager at Arisu, a korean restaurant in munich <br> <a href="https://www.instagram.com/arisu__lehel/?hl=de" target="_blank">arisu instagram</a> </span> </li>
+            </ul>
         </div>
 
         <footer class="contact-bar">

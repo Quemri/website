@@ -1,6 +1,18 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: rgb(245, 227, 206);
+    font-family:"Sour Gummy", serif;
 }
+
+
+
+
+
+
+
+/* Navigator */
 
 .frame{
     margin: 30px 150px;
@@ -28,14 +40,13 @@ ul{
 
 .site-name{
     margin: 0;
-    font-family:"Sour Gummy", serif;
     font-weight: 800;
     font-size: 30px;
     color: #5e5444;
 }
 
+
 .nav-menu{
-    font-family:"Sour Gummy", serif;
     font-weight: 800;
     font-size: 16px;
 }
@@ -49,6 +60,19 @@ a:hover{
     transition: 0.3s;
 }
 
+a.site-name:hover{
+    color: #5e5444;
+    text-decoration: none; 
+    transition: none; 
+    pointer-events: auto;
+}
+
+
+
+
+
+
+
 /*dashboard*/
 
 .dashboard{
@@ -58,7 +82,6 @@ a:hover{
 }
 
 .introduction{
-    font-family:"Sour Gummy", serif;
     font-weight: 700;
     font-size: 40px;
     color: #5e5444;
@@ -80,8 +103,14 @@ a:hover{
 
 }
 
+
+
+
+
+
+/*Recent Works*/
+
 .recent-menu{
-    font-family:"Sour Gummy", serif;
     font-weight: 800;
     font-size: large;
 }
@@ -116,7 +145,6 @@ a:hover{
 
 .text{
     flex: 1;
-    font-family:"Sour Gummy", serif;
 }
 .text h4{
     margin: 0;
@@ -143,20 +171,62 @@ a:hover{
     cursor: pointer;
     font-size: 16px;
     text-align: center;
+    font-family:"Sour Gummy", serif;
+
   }
   
   .button:hover {
     background-color: transparent;
-    color:black;
+    color: #ffc2b0;
+    border: 2px solid #ffc2b0;
+    transition: 0.3s;
   }
   
   .crochet{
-    font-family:"Sour Gummy", serif;
-  }
-  .cs{
     margin-top: 50px;
-    font-family:"Sour Gummy", serif;
   }
+
+
+
+
+
+
+  /* Works */
+
+  .arisu{
+    font-weight: 800;
+    font-size: larger;
+    margin-top: 50px;
+  }
+
+  .work{
+    margin: 0;
+    font-weight: 600;
+    font-size: larger;
+    color: #5e5444;
+  }
+
+  .work li{
+    display: flex;
+  }
+  .work .time{
+    flex: 0 0 100px;
+  }
+  .work .details{
+    flex: 1;
+    text-align: left;
+  }
+
+
+
+
+  /* Contact */
+
+
+
+
+  /*Mobile Ansicht*/
+
 
 @media (max-width: 600px) {
     .frame{

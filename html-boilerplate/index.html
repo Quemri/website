@@ -32,6 +32,17 @@
             </h1>
         </div>
 
+        <script>
+            if (window.location.pathname.endsWith('gallerie.html')) {
+              const newPath = window.location.pathname.replace('gallerie.html', 'gallerie/');
+              window.history.replaceState({}, '', newPath);
+            }
+            if (window.location.pathname.endsWith('info.html')) {
+              const newPath = window.location.pathname.replace('info.html', 'info/');
+              window.history.replaceState({}, '', newPath);
+            }
+      </script>
+
         <h5 class="recent-menu">RECENT WORKS</h5>
 
         <div class="recent-works">

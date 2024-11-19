@@ -28,14 +28,14 @@ ul{
 
 .site-name{
     margin: 0;
-    font-family: "Doto", serif;
+    font-family:"Sour Gummy", serif;
     font-weight: 800;
     font-size: 30px;
     color: #5e5444;
 }
 
 .nav-menu{
-    font-family: "Doto", serif;
+    font-family:"Sour Gummy", serif;
     font-weight: 800;
     font-size: 16px;
 }
@@ -81,7 +81,7 @@ a:hover{
 }
 
 .recent-menu{
-    font-family: "Doto", serif;
+    font-family:"Sour Gummy", serif;
     font-weight: 800;
     font-size: large;
 }
@@ -149,4 +149,31 @@ a:hover{
     background-color: transparent;
     color:black;
   }
+  
+  .crochet{
+    font-family:"Sour Gummy", serif;
+  }
+  .cs{
+    margin-top: 50px;
+    font-family:"Sour Gummy", serif;
+  }
 
+@media (max-width: 600px) {
+    .frame{
+        margin: 30px 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .duck-image{
+        margin-right: 0;
+        margin-bottom: 10px;
+        
+    }
+    .text{
+        text-align: center;
+    }
+}

@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(245, 227, 206);
+}
+.text{
+    color: #5e5444;    
+    font-family:"Sour Gummy", serif;
+    margin-top: 100px;
+
+}
+.frame{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+.navigator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li{
+    display: inline;
+    align-self: center;
+    margin: 0;
+    margin-left: 15px;
+}
+
+ul{
+    margin: 0;
+    align-self: center;
+}
+
+.site-name{
+    margin: 0;
+    font-family:"Sour Gummy", serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #5e5444;
+}
+
+.nav-menu{
+    font-family:"Sour Gummy", serif;
+    font-weight: 800;
+    font-size: 16px;
+}
+a{
+    color: #342b1d;
+    text-decoration: none;
+}
+.diego{
+    display: flex;
+}
+.cat{
+    margin-bottom: 50px;
+}
+@media (max-width: 600px) {
+    .frame{
+        margin: 30px 50px;
+        display: flex;
+        flex-direction: column;
+    }
+}

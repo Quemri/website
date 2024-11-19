@@ -54,17 +54,37 @@ a.site-name:hover{
     pointer-events: auto;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
 
-.diego{
-    display: flex;
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
 }
-.cat{
-    margin-bottom: 50px;
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Sorgt dafür, dass Bilder gleichmäßig angezeigt werden */
+    display: block;
+    transition: transform 0.3s ease; /* Für Zoom-Effekt */
 }
-@media (max-width: 900px) {
+
+.gallery-item img:hover {
+    transform: scale(1.1); /* Zoom-Effekt bei Hover */
+  }
+
+  @media (max-width: 900px) {
     .frame{
         margin: 30px 50px;
         display: flex;
         flex-direction: column;
+    }
+    .gallery{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }

@@ -21,6 +21,18 @@
                 <li><a href="info.html" class="nav-menu">INFO</a></li>
             </ul>
         </nav>
+
+        <script>
+            if (window.location.pathname.endsWith('gallerie.html')) {
+              const newPath = window.location.pathname.replace('gallerie.html', 'gallerie/');
+              window.history.replaceState({}, '', newPath);
+            }
+            if (window.location.pathname.endsWith('info.html')) {
+              const newPath = window.location.pathname.replace('info.html', 'info/');
+              window.history.replaceState({}, '', newPath);
+            }
+      </script>
+      
         <h1 class="text">
             Hi, this is still under construction, just have a look at my cats :)
         </h1>

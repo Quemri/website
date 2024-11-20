@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gyuri Lee</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,8 @@
             <h3 class="site-name"><a href="/" class="site-name">leegyuri.com</a></h3>
             <ul>
                 <li><a href="/" class="nav-menu">WORK</a></li>
-                <li><a href="info.html" class="nav-menu">INFO</a></li>
+                <li><a href="info/
+                    " class="nav-menu">INFO</a></li>
             </ul>
         </nav>
         <div class="dashboard">
@@ -32,17 +33,6 @@
             </h1>
         </div>
 
-        <script>
-            if (window.location.pathname.endsWith('gallery.html')) {
-              const newPath = window.location.pathname.replace('gallery.html', 'gallery/');
-              window.history.replaceState({}, '', newPath);
-            }
-            if (window.location.pathname.endsWith('info.html')) {
-              const newPath = window.location.pathname.replace('info.html', 'info/');
-              window.history.replaceState({}, '', newPath);
-            }
-      </script>
-
         <h5 class="recent-menu">RECENT WORKS</h5>
 
         <div class="recent-works">
@@ -52,7 +42,7 @@
                     <img src="images/duck.jpg" alt="Duck crochet" class="duck-image">
                     <div class="text crochet">
                         <p>When I have a crisis because of debugging, I create cute things to relief stress. Check out the other results of my pain :)</p>
-                        <a href="gallery.html"><button class="button crochet">View more</button></a>
+                        <a href="gallery/"><button class="button crochet">View more</button></a>
                     </div>
                 </div>
             </div>

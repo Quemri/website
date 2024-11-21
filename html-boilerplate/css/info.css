@@ -63,7 +63,7 @@ a.site-name:hover{
 }
 @media (max-width: 900px) {
     .frame{
-        margin: 30px 50px;
+        margin: 30px 10px;
         display: flex;
         flex-direction: column;
     }

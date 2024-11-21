@@ -1,0 +1,149 @@
+/* Allgemeine Einstellungen */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(245, 227, 206);
+    font-family:"Sour Gummy", serif;
+}
+
+
+
+
+
+
+
+/* Navigator */
+
+.frame{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li{
+    display: inline;
+    align-self: center;
+    margin: 0;
+    margin-left: 15px;
+}
+
+ul{
+    margin: 0;
+    align-self: center;
+}
+
+.site-name{
+    margin: 0;
+    font-weight: 800;
+    font-size: 30px;
+    color: #5e5444;
+}
+
+
+.nav-menu{
+    font-weight: 800;
+    font-size: 16px;
+}
+
+
+a{
+    color: #342b1d;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ffc2b0;
+    transition: 0.3s;
+}
+
+a.site-name:hover{
+    color: #5e5444;
+    text-decoration: none; 
+    transition: none; 
+    pointer-events: auto;
+}
+
+
+
+  
+  /* Galerie-Stil */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Automatische Anpassung */
+    gap: 20px; /* Abstand zwischen den Rechtecken */
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 100px;
+  }
+  
+  /* Projekt-Rechteck */
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+    border: 2px solid #333; /* Schwarzer Rahmen */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Leichte Hover-Animation */
+    cursor: pointer;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px); /* Effekt beim Hover */
+  }
+  
+  /* Bildcontainer */
+  .image-container {
+    width: 100%;
+    height: 200px; /* Feste Höhe des Bildes */
+    overflow: hidden; /* Überschuss des Bildes abschneiden */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Bild passend zuschneiden */
+    transition: transform 0.3s ease; /* Zoom-Effekt */
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.1); /* Zoom beim Hover */
+  }
+  
+  /* Button-Stil */
+  .project-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333; /* Schwarzer Hintergrund */
+    color: white; /* Weißer Text */
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .project-button:hover {
+    background-color: white; /* Weißer Hintergrund beim Hover */
+    color: #333; /* Schwarzer Text beim Hover */
+    border: 2px solid #333; /* Rahmen beim Hover */
+  }
+
+  @media (max-width: 900px) {
+    .frame{
+        margin: 30px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+  

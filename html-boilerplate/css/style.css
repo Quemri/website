@@ -113,6 +113,12 @@ a.site-name:hover{
 
 /*Recent Works*/
 
+.recent-works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .recent-menu{
     margin-top: 100px;
     font-weight: 800;
@@ -203,17 +209,26 @@ a.site-name:hover{
     align-items: center;
     align-self: center;
   }
+  .work-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 
   .work{
     margin: 0;
     font-weight: 600;
     font-size: larger;
     color: #5e5444;
-    align-items: center;
+    text-align: left;
   }
 
   .work li{
     display: flex;
+    width: 150%;
   }
   .work .time{
     flex: 0 0 100px;
@@ -229,12 +244,24 @@ a.site-name:hover{
   /* Contact */
 
 
+  .contact-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+  }
+
+  .contact{
+    align-self: center;
+  }
+
+
 
 
   /*Mobile Ansicht*/
 
 
-@media (max-width: 900px) {
+@media (max-width: 850px) {
     .frame{
         margin: 30px 10px;
         display: flex;
@@ -259,7 +286,12 @@ a.site-name:hover{
     }
     .introduction{
         font-weight: 700;
-        font-size: 35px;
+        font-size: 40px;
         color: #5e5444;
+        text-align: center;
     }
+    .work li{
+        display: flex;
+        width: 100%;
+      }
 }

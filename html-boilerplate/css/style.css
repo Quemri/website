@@ -206,16 +206,12 @@ a.site-name:hover{
     font-weight: 800;
     font-size: larger;
     margin-top: 100px;
-    align-items: center;
     align-self: center;
   }
   .work-frame{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto;
   }
 
   .work{
@@ -223,20 +219,15 @@ a.site-name:hover{
     font-weight: 600;
     font-size: larger;
     color: #5e5444;
-    text-align: left;
   }
 
   .work li{
     display: flex;
-    width: 150%;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .work .time{
-    flex: 0 0 100px;
-  }
-  .work .details{
-    flex: 1;
-    text-align: left;
-  }
+
+
 
 
 
@@ -290,8 +281,4 @@ a.site-name:hover{
         color: #5e5444;
         text-align: center;
     }
-    .work li{
-        display: flex;
-        width: 100%;
-      }
 }

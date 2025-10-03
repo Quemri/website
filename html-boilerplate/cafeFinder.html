@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyuri Lee</title>
+
+    <link rel="stylesheet" href="css/cafe.css">
+    <style>
+        #map {
+            height: 100vh;
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="frame">
+        <nav class="navigator">
+            <h3 class="site-name"><a href="index.html" class="site-name">leegyuri.com</a></h3>
+            <ul>
+                <li><a href="work.html" class="nav-menu">WORK</a></li>
+                <li><a href="info.html" class="nav-menu">INFO</a></li>
+            </ul>
+        </nav>
+        <div class="cafefinder">
+            <h2>Café Finder</h2>
+            <p>Click on the card to find cafés in your vicinity.</p>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOBO6OMcQybMYk8skLHKgls7UZufapSiY&libraries=places&callback=initMap"
+      async 
+      defer
+    ></script>
+    <script src="js/cafe.js"></script>
+    <script>
+        window.onload = () => {
+            initMap();
+        };
+    </script>
+    </body>
+</html>

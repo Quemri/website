@@ -1,0 +1,98 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(245, 227, 206);
+    font-family:"Sour Gummy", serif;
+}
+
+
+
+/* Navigator */
+
+.frame{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li{
+    display: inline;
+    align-self: center;
+    margin: 0;
+    margin-left: 15px;
+}
+
+ul{
+    margin: 0;
+    align-self: center;
+}
+
+.site-name{
+    margin: 0;
+    font-weight: 800;
+    font-size: 30px;
+    color: #5e5444;
+}
+
+
+.nav-menu{
+    font-weight: 800;
+    font-size: 16px;
+}
+
+
+a{
+    color: #342b1d;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ffc2b0;
+    transition: 0.3s;
+}
+
+a.site-name:hover{
+    color: #5e5444;
+    text-decoration: none; 
+    transition: none; 
+    pointer-events: auto;
+}
+
+#map {
+  width: 100%;
+  height: 80vh;        /* 80% der Bildschirmhöhe */
+  min-height: 400px;   /* mindestens 400px hoch */
+  border-radius: 8px;  /* optional: abgerundete Ecken */
+  margin-top: 20px;    /* Abstand zur Navigation */
+}
+
+.cafefinder {
+    text-align: center;
+    color: #342b1d;
+    margin-top: 40px;
+}
+.cafefinder h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.cafefinder p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (max-width: 850px) {
+    .frame{
+        margin: 30px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}

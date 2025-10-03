@@ -61,7 +61,8 @@
             } else {
                 userMarker.position = location;
             }
-            map.setCenter(location)
+            map.setCenter(location);
+            map.setZoom(15);
             findCafes(map, location, InfoWindow, AdvancedMarkerElement)
         }
 

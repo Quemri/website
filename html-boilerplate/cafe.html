@@ -35,11 +35,17 @@
         </div>
         <div id="map"></div>
     </div>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOBO6OMcQybMYk8skLHKgls7UZufapSiY&libraries=places&callback=initMap"
-      async 
-      defer
-    ></script>
+    <script>
+        function loadGoogleMaps() {
+            const script = document.createElement("script");
+            script.src = `https://maps.googleapis.com/maps/api/js?key=${CONFIG.GOOGLE_MAPS_API_KEY}&libraries=places&callback=initMap`;
+            script.async = true;
+            script.defer = true;
+            document.head.appendChild(script);
+        }
+
+        loadGoogleMaps();
+    </script>
     <script src="js/cafe.js"></script>
     <script>
         window.onload = () => {

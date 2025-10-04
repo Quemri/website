@@ -35,11 +35,11 @@
         </div>
         <div id="map"></div>
     </div>
-    <script src="config.js"></script>
+    <script src="js/config.js"></script>
     <script>
         function loadGoogleMaps() {
             const script = document.createElement("script");
-            script.src = `https://maps.googleapis.com/maps/api/js?key=${CONFIG.GOOGLE_MAPS_API_KEY}&libraries=places&callback=initMap`;
+            script.src = `https://maps.googleapis.com/maps/api/js?key=${CONFIG.GOOGLE_MAPS_API_KEY}&libraries=places`;
             script.async = true;
             script.defer = true;
             document.head.appendChild(script);

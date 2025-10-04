@@ -9,6 +9,7 @@
             const service = new google.maps.places.PlacesService(map);
 
             const request = {
+                fields: ["displayName", "location", "formattedAddress", "rating", "userRatingCount", "photos"],
                 location: location,
                 radius: 5000,
                 type: "cafe",
@@ -106,4 +107,5 @@
             }
             enableClick(map, InfoWindow, AdvancedMarkerElement);
         }
-    
+    window.initMap = initMap;
+

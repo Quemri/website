@@ -30,29 +30,6 @@ ul{
     align-self: center;
 }
 
-.site-name{
-    margin: 0;
-    font-family:"Sour Gummy", serif;
-    font-weight: 800;
-    font-size: 30px;
-    color: #5e5444;
-}
-
-.nav-menu{
-    font-family:"Sour Gummy", serif;
-    font-weight: 800;
-    font-size: 16px;
-}
-a{
-    color: #342b1d;
-    text-decoration: none;
-}
-a.site-name:hover{
-    color: #5e5444;
-    text-decoration: none; 
-    transition: none; 
-    pointer-events: auto;
-}
 
 
 .diego{

@@ -70,6 +70,20 @@ a.site-name:hover{
     pointer-events: auto;
 }
 
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.introduction{
+    font-weight: 700;
+    font-size: 50px;
+    color: #5e5444;
+}
+
+
 
 
   /* Galerie-Stil */

@@ -9,14 +9,13 @@
             const service = new google.maps.places.PlacesService(map);
 
             const request = {
-                fields: ["displayName", "location", "formattedAddress", "rating", "userRatingCount", "photos"],
                 location: location,
                 radius: 5000,
                 type: "cafe",
             };
 
             service.nearbySearch(request, (results, status) => {
-                if(status === google.maps.places.PlacesServiceStatus.OK) {
+                if(status === google.maps.places.PlacesServiceStatus.OK && results) {
                     results.forEach((place) => {
                         const cafeDiv = document.createElement("div");
                         cafeDiv.innerHTML = "☕"; 
@@ -29,7 +28,7 @@
                             content: cafeDiv
                         });
 
-                        marker.element.style.cursor = "pointer";
+
 
                         const info = new InfoWindow({
                             content: `<strong>${place.name}</strong><br>${place.vicinity || "Keine"}<br>⭐${place.rating} (${place.user_ratings_total || 0})`,

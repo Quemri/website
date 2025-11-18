@@ -65,12 +65,6 @@ a.site-name:hover{
     color: #5e5444;
 }
 
-.dashboard{
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-}
 
 .gallery {
     display: grid;

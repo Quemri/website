@@ -39,14 +39,18 @@
     <script>
         function loadGoogleMaps() {
             const script = document.createElement("script");
-            script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDtLytAZDVBrr3i0uooPQ4PXOHSw8skp_0&libraries=places&callback=initMap`;
+            script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDtLytAZDVBrr3i0uooPQ4PXOHSw8skp_0&libraries=places`;
             script.async = true;
             script.defer = true;
             document.head.appendChild(script);
         }
-
         loadGoogleMaps();
     </script>
     <script src="js/cafe.js"></script>
+    <script>
+        window.onload = () => {
+            initMap();
+        };
+    </script>
     </body>
 </html>
